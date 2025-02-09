@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+   <style>
+    body {
+    align-items: center;
+    justify-content: center;
+    display:flex;
+    height: 110vh;
+    background-image: linear-gradient(rgb(252, 24, 85), rgb(234, 108, 142),#fcb6c2);
+}
+.heart{
+  background-color: rgb(243, 23, 70);
+  height:400px;
+  width: 310px;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  position: absolute;
+}
+   
+.heart::left{
+  left: 35%;
+  transform: rotate(-60deg) scale(1);
+  animation: pulse 0.5s linear infinite;
+}
+.heart::right{
+  right: 32%;
+  transform: rotate(-60deg) scale(1);
+  animation: pulse 0.5s linear infinite;
+}
+   </style>
+</head>
+
+<body>
+    <div class = "heartleft"> </div>
+    <div class = "heartright"> </div>
+
+</body>
+</html>
