@@ -9,31 +9,64 @@
     height: 110vh;
     background-image: linear-gradient(rgb(252, 24, 85), rgb(234, 108, 142),#fcb6c2);
 }
-.heart{
+
+.leftheart{
   background-color: rgb(243, 23, 70);
-  height:400px;
-  width: 310px;
-  border-top-left-radius: 100%;
-  border-top-right-radius: 100%;
+  height:300px;
+  width: 250px;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
   position: absolute;
+  left: 38%;
+  animation: leftpulse 0.75s ease-in-out infinite;
 }
-   
-.heart::left{
-  left: 35%;
-  transform: rotate(-60deg) scale(1);
-  animation: pulse 0.5s linear infinite;
+.rightheart{
+  background-color: rgb(243, 23, 70);
+  height: 300px;
+  width: 250px;
+  border-top-left-radius: 80%;
+  border-top-right-radius: 80%;
+  position: absolute;
+  right: 37.9%;
+  animation: rightpulse 0.75s ease-in-out infinite;
 }
-.heart::right{
-  right: 32%;
-  transform: rotate(-60deg) scale(1);
-  animation: pulse 0.5s linear infinite;
-}
+
+@keyframes leftpulse{
+  0% {
+        transform: rotate(-55deg) scale(1);
+     }
+
+  50% {
+        transform: rotate(-55deg) scale(1.2);
+        opacity: 1;
+    }
+  100% {
+        transform: rotate(-55deg) scale(1.0);
+        opacity:1;
+    }
+  }
+
+  @keyframes rightpulse{
+  0% {
+        transform: rotate(55deg) scale(1);
+     }
+
+  50% {
+        transform: rotate(55deg) scale(1.2);
+        opacity: 1;
+    }
+  100% {
+        transform: rotate(55deg) scale(1);
+    }
+  }
+
    </style>
+
 </head>
 
 <body>
-    <div class = "heartleft"> </div>
-    <div class = "heartright"> </div>
+    <div class = "leftheart"> </div>
+    <div class = "rightheart"> </div>
 
 </body>
 </html>
