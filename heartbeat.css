@@ -1,0 +1,54 @@
+body {
+align-items: center;
+justify-content: center;
+display:flex;
+height: 110vh;
+background-image: linear-gradient(rgb(252, 24, 85), rgb(234, 108, 142),#fcb6c2);
+}
+
+.leftheart{
+background-color: rgb(243, 23, 70);
+height:300px;
+width: 250px;
+border-top-left-radius: 80%;
+border-top-right-radius: 80%;
+position: absolute;
+left: 38%;
+animation: leftpulse 0.8s ease-in-out infinite;
+}
+.rightheart{
+background-color: rgb(243, 23, 70);
+height: 300px;
+width: 250px;
+border-top-left-radius: 80%;
+border-top-right-radius: 80%;
+position: absolute;
+right: 37.9%;
+animation: rightpulse 0.8s ease-in-out infinite;
+}
+
+@keyframes leftpulse{
+0% {
+    transform: rotate(-55deg) scale(1);
+ }
+
+50% {
+    transform: rotate(-55deg) scale(1.2);
+}
+100% {
+    transform: rotate(-55deg) scale(1.0);
+}
+}
+
+@keyframes rightpulse{
+0% {
+    transform: rotate(55deg) scale(1);
+ }
+
+50% {
+    transform: rotate(55deg) scale(1.2);
+}
+100% {
+    transform: rotate(55deg) scale(1);
+}
+}
