@@ -1,4 +1,4 @@
 # Simple-heart-art
-w/animation?
+1st attempt sa animation
 
 under development :<
